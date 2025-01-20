@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".SettingsActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,70 +15,59 @@
             android:id="@+id/out_settings"
             android:text="@string/settings"
             app:icon="@drawable/ic_arrow_back"
-            style="@style/out_settings"
-            />
+            style="@style/out_settings" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
         <TextView
             style="@style/textView_settings"
-            android:text="@string/dark_theme"
-            />
-
+            android:text="@string/dark_theme" />
         <Switch
             android:id="@+id/dark_theme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
         <TextView
             style="@style/textView_settings"
-            android:text="@string/share"
-            />
+            android:text="@string/share" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/share"
-            app:icon="@drawable/ic_share"
-            style="@style/buttons_settings" />
+            style="@style/buttons_settings"
+            app:icon="@drawable/ic_share" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
         <TextView
             style="@style/textView_settings"
-            android:text="@string/support"
-            />
+            android:text="@string/support" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/support"
-            app:icon="@drawable/ic_support"
             style="@style/buttons_settings"
-            />
+            app:icon="@drawable/ic_support" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
         <TextView
             style="@style/textView_settings"
-            android:text="@string/agreement"
-            />
+            android:text="@string/agreement" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/agreement"
-            app:icon="@drawable/ic_arrow_forward"
             style="@style/buttons_settings"
-            />
+            app:icon="@drawable/ic_arrow_forward" />
     </LinearLayout>
 
 </LinearLayout>
